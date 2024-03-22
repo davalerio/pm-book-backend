@@ -1,0 +1,148 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LR Virtual</title>
+</head>
+
+<body>
+	<center class="wrapper">
+		<table class="main" width="100%">
+			<tr>
+				<td height="4" style="background-color: #ea0c73;"></td>
+			</tr>
+
+			<tr>
+				<td style="background: #000; text-align: center;">
+					<img src="https://app.perumoney.pe/assets/media/logos/pm-logo.png" style="width: 200px">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="title">
+					Libro de reclamaciones digital
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">
+					Hola <span>${first_name} ${father_surname};</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">
+					Hemos recibido su <span>${request_id} ${serie} - ${correlative}</span> y queremos asegurarle que
+					estamos trabajando en ello.
+				</td>
+			</tr>
+
+			<tr>
+				<td class="info">
+					Le recordamos que nuestro compromiso es responder su solicitud dentro de un plazo máximo de 15
+					días hábiles,
+					agradecemos su paciencia y comprensión.
+				</td>
+			</tr>
+
+			<!-- FORMULARIO -->
+			<tr>
+				<td style="padding-left: 20px; padding-right: 20px;">
+					<table width="100%" border="1" style="margin-top: 30px">
+						<tr>
+							<td colspan="3" class="title">
+								Información del registro
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="form-title">Datos personales</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="form-label">Tipo de documento</td>
+							<td class="form-label">Número documento</td>
+						</tr>
+						<tr>
+							<td colspan="2">${document_id}</td>
+							<td>${document_num}</td>
+						</tr>
+						<tr>
+							<td class="form-label">Nombres</td>
+							<td class="form-label">Primer apellido</td>
+							<td class="form-label">Segundo apellido</td>
+						</tr>
+						<tr>
+							<td>${first_name}</td>
+							<td>${father_surname}</td>
+							<td>${mother_surname}</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="form-title">Datos de contacto</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="form-label">Correo electrónico</td>
+							<td class="form-label">Celular</td>
+						</tr>
+						<tr>
+							<td colspan="2">${email}</td>
+							<td>${phone}</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="form-label">Dirección</td>
+						</tr>
+						<tr>
+							<td colspan="3">${address}</td>
+						</tr>
+						<tr>
+							<td class="form-label">Departamento</td>
+							<td class="form-label">Provincia</td>
+							<td class="form-label">Distrito</td>
+						</tr>
+						<tr>
+							<td>${department_id}</td>
+							<td>${province_id}</td>
+							<td>${district_id}</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="form-title">Detalles del reclamo / queja</td>
+						</tr>
+						<tr>
+							<td class="form-label">Servicio</td>
+							<td class="form-label">Monto</td>
+							<td class="form-label">Tipo</td>
+						</tr>
+						<tr>
+							<td>${service_id}</td>
+							<td>${amount}</td>
+							<td>${request_id}</td>
+						</tr>
+						<tr>
+							<td class="form-label">Fecha</td>
+							<td class="form-label">Hora</td>
+							<td class="form-label">Agencia</td>
+						</tr>
+						<tr>
+							<td>${day}</td>
+							<td>${hour}</td>
+							<td>${agency_id}</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="form-label">Mensaje</td>
+						</tr>
+						<tr>
+							<td colspan="3" style="text-align: justify; padding-bottom: 20px;">${message}</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="info">Atentamente; <br> Centro de información <span>PERUMONEY</span>.</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>
