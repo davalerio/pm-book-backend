@@ -1,10 +1,12 @@
 const mysql = require('mysql2');
+const dotenv = require('dotenv')
+dotenv.config()
 
 const mysqlConnection = mysql.createConnection({
-  host: 'server.perumoney.pe',
-  user: 'developer',
-  password: 'r00t@D3v',
-  database: 'pm_homepage',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 mysqlConnection.connect(function (err) {
