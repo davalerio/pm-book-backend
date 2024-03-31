@@ -5,3 +5,4 @@
   - MySQL2
   - NodeJS
   - nodemailer
+  - dotenv
