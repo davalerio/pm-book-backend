@@ -1,1 +1,51 @@
-select * from request_history;
+INSERT INTO
+    request_history (
+        serie,
+        correlative,
+        ruc,
+        business,
+        document_id,
+        document_num,
+        first_name,
+        father_surname,
+        mother_surname,
+        email,
+        phone,
+        address,
+        department_id,
+        province_id,
+        district_id,
+        service_id,
+        amount,
+        request_id,
+        day,
+        hour,
+        agency_id,
+        message
+    )
+VALUES (
+        '001',
+        '00001',
+        '20535694550',
+        'PERUMONEY SAC',
+        '67b67ea0-28fe-11ee-81b0-723401d86a22',
+        '46789226',
+        'DANIEL ALONSO',
+        'VALERIO',
+        'BRONCANO',
+        'danielvaleriob@gmail.com',
+        '999999999',
+        'CA. CATALINO MIRANDA 213 - 215',
+        '1',
+        '1',
+        '1',
+        'dfeb2bfb-28fc-11ee-81b0-723401d86a22',
+        '1000',
+        '978f01d3-28fe-11ee-81b0-723401d86a22',
+        '2023-01-23',
+        '10:00:00',
+        '129b8e91-28fe-11ee-81b0-723401d86a22',
+        'ESTE ES UN MENSAJE DE PRUEBA DESDE EL VISUAL CODE'
+    );
+
+SELECT * FROM request_history;

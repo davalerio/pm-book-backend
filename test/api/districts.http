@@ -1,0 +1,11 @@
+# Environtment
+@BASE_URL=http://localhost:
+@PORT=3000
+@ROUTES=/api/v1/districts
+@ID=100
+
+### Listar registros
+GET {{BASE_URL}}{{PORT}}{{ROUTES}} HTTP/1.1
+
+### Listar Registros por ID FOREIGN KEY
+GET {{BASE_URL}}{{PORT}}{{ROUTES}}/{{ID}} HTTP/1.1

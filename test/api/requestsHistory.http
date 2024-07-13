@@ -1,0 +1,40 @@
+# Environtment
+@BASE_URL=http://localhost:
+@PORT=3000
+@ROUTES=/api/v1/requests-history
+@ID=1
+
+### Listar registros
+GET {{BASE_URL}}{{PORT}}{{ROUTES}} HTTP/1.1
+
+### Ultimo codigo de solicitud
+GET {{BASE_URL}}{{PORT}}{{ROUTES}}/lastclaimcode HTTP/1.1
+
+### Registrar solicitud
+POST {{BASE_URL}}{{PORT}}{{ROUTES}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "serie" : "F001",
+  "correlative" : "F001",
+  "ruc" : "F001",
+  "business" : "F001",
+  "document_id" : "F001",
+  "document_num" : "F001",
+  "first_name" : "F001",
+  "father_surname" : "F001",
+  "mother_surname" : "F001",
+  "email" : "F001",
+  "phone" : "999999999",
+  "address" : "F001",
+  "department_id" : "F001",
+  "province_id" : "F001",
+  "district_id" : "F001",
+  "service_id" : "F001",
+  "amount" : "999.99",
+  "request_id" : "F001",
+  "day" : "2021-01-01",
+  "hour" : "10:00:00",
+  "agency_id" : "F001",
+  "message" : "MENSAJE DE PRUEBA DEL VSCODE"
+}

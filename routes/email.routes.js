@@ -1,15 +1,23 @@
 // const express = require('express');
 // const router = express.Router();
 
-const { Router } = require('express');
-const router = Router();
+import { Router } from 'express'
+import { EmailController } from '../controllers/emailController.js'
+const router = Router()
 
-let email = require('../controllers/email.controller');
-let emailPerumoney = require('../controllers/emailPerumoney.controller');
-let emailQullqui = require('../controllers/emailQullqui.controller');
+router.post('/', EmailController.sendEmail)
 
-router.post('/sendemail', email.sendEmail);
-router.post('/emailPerumoney', emailPerumoney.sendEmail);
-router.post('/emailQullqui', emailQullqui.sendEmail);
+export default router
 
-module.exports = router;
+// const { Router } = require('express');
+// const router = Router();
+
+// let email = require('../controllers/email.controller');
+// let emailPerumoney = require('../controllers/emailPerumoney.controller');
+// let emailQullqui = require('../controllers/emailQullqui.controller');
+
+// router.post('/sendemail', email.sendEmail);
+// router.post('/emailPerumoney', emailPerumoney.sendEmail);
+// router.post('/emailQullqui', emailQullqui.sendEmail);
+
+// module.exports = router;
