@@ -1,0 +1,173 @@
+<body
+  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width: 860px; margin: 30px auto;">
+  <div style="border: 1px solid #000;">
+    <div style="text-align: center; background-color: #000;">
+      <img
+        src="https://ci6.googleusercontent.com/proxy/ASAZZospsrQ6pKNKhHhvdCJmueA4_jlJpBYhwTqKAXMBKkTlmzMz2EAgMVqweGSnrdDfh679QJO9K_alM_SKsVtXypKVg7ZHSZ-3roIz0lXAXDTSdrxzPa2ZQH0yFuZS2_PXVmUYdsepNiveY5xcMaVtkdvkCDlj5VMh9xZNLriflKM8=s0-d-e1-ft#http://cdn.mcauto-images-production.sendgrid.net/7ac226d7ec0aad63/eeed62ce-bf3f-4aa5-a966-71b48b2c7bb1/200x80.png"
+        alt="">
+    </div>
+    <div style="padding: 20px">
+      <h1
+        style="text-align: center; font-size: 25px; background: gold; margin: 20px auto; width: 300px; padding: 20px 10px;">
+        <%= typerequest %>
+      </h1>
+      <p style="text-align: center; font-size:16px; font-weight: bold;">CASO: <%= history_id %>
+      </p>
+      <p style="font-size: 22px; margin: 20px auto; width: 700px; padding: 20px 10px;">Estimado cliente,
+        Hemos recibido su <%= typerequest %> y queremos asegurarle que estamos trabajando en ello.<br>
+          Le recordamos que nuestro compromiso es reponder su solicitud dentro de un plazo máximo de 15 días hábiles.
+          Agradecemos su paciencia y comprensión.
+      </p>
+      <p style="text-align: center; font-size: 25px;">
+        Atentamente, Centro de Información PM.
+      </p>
+    </div>
+    <div style="padding: 20px">
+      <h1 style=" text-align: center;">Información del Registro</h1>
+      <div>
+        <h2 style="display: block;">Datos Personales</h2>
+
+        <div>
+          <div>
+            <p style="font-weight: bold;">Tipo de documento</p>
+            <p>
+              <%= typedoc %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Número</p>
+            <p>
+              <%= numberdoc %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Nombres</p>
+            <p>
+              <%= firstname %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Primer Apellido</p>
+            <p>
+              <%= lastnamefather %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Segundo Apellido</p>
+            <p>
+              <%= lastnamemother %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <h2 style="display: block;">Datos del Contacto</h2>
+        <div>
+          <div>
+            <p style="font-weight: bold;">Correo electrónico</p>
+            <p>
+              <%= email %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Celular</p>
+            <p>
+              <%= phone %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Dirección</p>
+            <p>
+              <%= address %>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div style="flex: 1;">
+            <p style="font-weight: bold;">Departamento</p>
+            <p>
+              <%= departament %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Provincia</p>
+            <p>
+              <%= province %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Distrito</p>
+            <p>
+              <%= district %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 style="display: block;">Detalles del Reclamo/Queja/Sugerencia</h2>
+        <div>
+          <div>
+            <p style="font-weight: bold;">Servicio</p>
+            <p>
+              <%= service %>
+            </p>
+          </div>
+          <div>
+            <p style="font-weight: bold;">Monto</p>
+            <p>
+              <%= amount %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Tipo</p>
+            <p>
+              <%= typerequest %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Fecha</p>
+            <p>
+              <%= day %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Hora</p>
+            <p>
+              <%= hour %>
+            </p>
+          </div>
+
+          <div>
+            <p style="font-weight: bold;">Agencia</p>
+            <p>
+              <%= agency %>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p style="font-weight: bold;">Detalle</p>
+            <p>
+              <%= message %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

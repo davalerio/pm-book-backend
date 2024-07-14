@@ -1,7 +1,7 @@
 # Environtment
 @BASE_URL=http://localhost:3000
-@ROUTES=/api/v1/services
-@ID=b3b9e061-4191-11ef-a402-723401d86a22
+@ROUTES=/api/v1/documents-identity
+@ID=ebadefdd-4190-11ef-a402-723401d86a22
 ### Listar registros
 GET {{BASE_URL}}{{ROUTES}} HTTP/1.1
 

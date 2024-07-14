@@ -1,43 +1,77 @@
--- Active: 1689905826056@@server.perumoney.pe@3306@pm_homepage
--- MALL
-DELIMITER / / CREATE TRIGGER mall_insert BEFORE
-INSERT ON mall FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+-- Active: 1720814504544@@developer.perumoney.pe@3306@perumoney_db
+-- documents_identity
+DELIMITER / /
+
+CREATE TRIGGER documents_identity_insert
+BEFORE INSERT ON documents_identity
+FOR EACH ROW
+BEGIN
+  IF NEW.id IS NULL THEN
+    SET NEW.id = UUID();
+  END IF;
+END //
+
+DELIMITTER;
+
+-- customers_claims
+DELIMITER / /
+
+CREATE TRIGGER customers_claims_insert
+BEFORE INSERT ON customers_claims
+FOR EACH ROW
+BEGIN
+  IF NEW.id IS NULL THEN
+    SET NEW.id = UUID();
+  END IF;
+END //
+
+DELIMITTER;
+
+DELIMITER / /
+
+CREATE TRIGGER service_insert BEFORE
+INSERT ON service FOR EACH ROW BEGIN SET NEW.id = UUID();
 END;
+
 DELIMITER;
--- SERVICE
-DELIMITER / / CREATE TRIGGER service_insert BEFORE
-INSERT ON service FOR EACH ROW BEGIN
-SET NEW.id = UUID();
-END;
-DELIMITER;
+
 -- AGENCY
 DELIMITER / / CREATE TRIGGER agency_insert BEFORE
-INSERT ON agency FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+
+INSERT ON agency FOR EACH ROW BEGIN SET NEW.id = UUID();
+
 END;
+
 DELIMITER;
 -- ALT AGENCY
 DELIMITER / / CREATE TRIGGER alt_agency_insert BEFORE
-INSERT ON alt_agency FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+
+INSERT ON alt_agency FOR EACH ROW BEGIN SET NEW.id = UUID();
+
 END;
+
 DELIMITER;
 -- DOCUMENT
 DELIMITER / / CREATE TRIGGER document_insert BEFORE
-INSERT ON document FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+
+INSERT ON document FOR EACH ROW BEGIN SET NEW.id = UUID();
+
 END;
+
 DELIMITER;
 -- REQUEST
 DELIMITER / / CREATE TRIGGER request_insert BEFORE
-INSERT ON request FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+
+INSERT ON request FOR EACH ROW BEGIN SET NEW.id = UUID();
+
 END;
+
 DELIMITER;
 -- REQUEST HISTORY
 DELIMITER / / CREATE TRIGGER request_history_insert BEFORE
-INSERT ON request_history FOR EACH ROW BEGIN
-SET NEW.id = UUID();
+
+INSERT ON request_history FOR EACH ROW BEGIN SET NEW.id = UUID();
+
 END;
+
 DELIMITER;

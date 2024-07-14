@@ -1,11 +1,9 @@
 # Environtment
-@BASE_URL=http://localhost:
-@PORT=3000
+@BASE_URL=http://localhost:3000
 @ROUTES=/api/v1/provinces
 @ID=2
-
 ### Listar registros
-GET {{BASE_URL}}{{PORT}}{{ROUTES}} HTTP/1.1
+GET {{BASE_URL}}{{ROUTES}} HTTP/1.1
 
-### Listar Registros por ID FOREIGN KEY
-GET {{BASE_URL}}{{PORT}}{{ROUTES}}/{{ID}} HTTP/1.1
+### Listar registros por ID
+GET {{BASE_URL}}{{ROUTES}}/{{ID}} HTTP/1.1

@@ -1,13 +1,13 @@
 import { db } from '../config/db.js'
 
-const tableName = 'ub_district'
+const tableName = 'provinces'
 const queries = {
   findAll: `SELECT * FROM ${tableName}`,
-  findByID: `SELECT * FROM ${tableName} WHERE province_id = ?`
+  findByID: `SELECT * FROM ${tableName} WHERE region_id = ?`
 }
 
-export const DistrictModel = {
-  // Listar registros
+export const ProvinceModel = {
+  // Listar regsitros
   findAll: async () => {
     try {
       const [rows] = await db.query(queries.findAll)

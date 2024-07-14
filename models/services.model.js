@@ -1,13 +1,13 @@
 import { db } from '../config/db.js'
 
-const tableName = 'ub_province'
+const tableName = 'services'
 const queries = {
-  findAll: `SELECT * FROM ${tableName}`,
-  findByID: `SELECT * FROM ${tableName} WHERE department_id = ?`
+  findAll: `SELECT * FROM ${tableName} WHERE state = 'active'`,
+  findByID: `SELECT * FROM ${tableName} WHERE id = ? and state = 'active'`
 }
 
-export const ProvinceModel = {
-  // Listar regsitros
+export const ServiceModel = {
+  // Listar registros
   findAll: async () => {
     try {
       const [rows] = await db.query(queries.findAll)
@@ -16,11 +16,11 @@ export const ProvinceModel = {
       console.error(error)
     }
   },
-  // Listar registro por ID FOREIGN KEY
+  // Listar registros por ID
   findByID: async (id) => {
     try {
       const [rows] = await db.query(queries.findByID, [id])
-      return rows
+      return rows[0]
     } catch (error) {
       console.error(error)
     }

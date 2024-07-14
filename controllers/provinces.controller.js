@@ -1,4 +1,4 @@
-import { ProvinceModel } from '../models/province.js'
+import { ProvinceModel } from '../models/provinces.model.js'
 
 export const ProvinceController = {
   // Listar registros

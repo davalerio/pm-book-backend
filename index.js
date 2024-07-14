@@ -3,16 +3,19 @@ import cors from 'cors'
 import colors from 'colors'
 
 // Import Routes
-import documentRouter from './routes/documents.js'
-import agencyRouter from './routes/agencies.js'
-import mallRouter from './routes/malls.js'
-import serviceRouter from './routes/services.js'
-import requestRouter from './routes/requests.js'
+import DocumentIdentityRoute from './routes/documents-identity.route.js'
+import AgencyRoute from './routes/agencies.route.js'
+import ServiceRoute from './routes/services.route.js'
+import ClaimsTypeRoute from './routes/claims-type.route.js'
+import CustomerClaimRoute from './routes/customers-claims.route.js'
+import CustomerAttributeRoute from './routes/customers-attributes.route.js'
+import DetailClaimRoute from './routes/details-claims.route.js'
+
 import requestHistoryRouter from './routes/requestsHistory.js'
 // Ubigeo
-import departmentRouter from './routes/departments.js'
-import provinceRouter from './routes/provinces.js'
-import districtRouter from './routes/districts.js'
+import RegionRoute from './routes/regions.route.js'
+import ProvinceRoute from './routes/provinces.route.js'
+import DistrictRoute from './routes/districts.route.js'
 // Email
 import emailRouter from './routes/email.routes.js'
 
@@ -24,16 +27,19 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 // Routes
-app.use('/api/v1/documents', documentRouter)
-app.use('/api/v1/agencies', agencyRouter)
-app.use('/api/v1/malls', mallRouter)
-app.use('/api/v1/services', serviceRouter)
-app.use('/api/v1/requests', requestRouter)
+app.use('/api/v1/documents-identity', DocumentIdentityRoute)
+app.use('/api/v1/agencies', AgencyRoute)
+app.use('/api/v1/services', ServiceRoute)
+app.use('/api/v1/claims-type', ClaimsTypeRoute)
+app.use('/api/v1/customers-claims', CustomerClaimRoute)
+app.use('/api/v1/customers-attributes', CustomerAttributeRoute)
+app.use('/api/v1/details-claims', DetailClaimRoute)
+
 app.use('/api/v1/requests-history', requestHistoryRouter)
 // Routes ubigeo
-app.use('/api/v1/departments', departmentRouter)
-app.use('/api/v1/provinces', provinceRouter)
-app.use('/api/v1/districts', districtRouter)
+app.use('/api/v1/regions', RegionRoute)
+app.use('/api/v1/provinces', ProvinceRoute)
+app.use('/api/v1/districts', DistrictRoute)
 // Email
 app.use('/api/v1/sendemail', emailRouter)
 

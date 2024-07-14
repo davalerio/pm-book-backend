@@ -1,0 +1,25 @@
+# Environtment
+@BASE_URL=http://localhost:3000
+@ROUTES=/api/v1/customers-attributes
+@DOCUMENT=12345678
+### Listar registros
+GET {{BASE_URL}}{{ROUTES}}/ HTTP/1.1
+
+### Listar registros por ID
+GET {{BASE_URL}}{{ROUTES}}/{{DOCUMENT}} HTTP/1.1
+
+### Crear registro
+POST {{BASE_URL}}{{ROUTES}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "documentId": "ebadefdd-4190-11ef-a402-723401d86a22",
+  "documentNum": "12345678",
+  "email": "danielvaleriob@gmail.com",
+  "phone": "999999999",
+  "address": "Jr. Los Pinos 123",
+  "regionId": "1",
+  "provinceId": "1",
+  "districtId": "1"
+}
+

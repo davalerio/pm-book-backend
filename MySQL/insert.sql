@@ -1,3 +1,16 @@
+SELECT * FROM documents_identity;
+SELECT * FROM customers_claims;
+
+-- documents_identity
+INSERT INTO documents_identity (code, name) VALUES
+('DNI', 'DOCUMENTO DE IDENTIDAD'),
+('CE.', 'CARNET DE EXTRANJERIA'),
+('PASAPORTE', 'PASAPORTE');
+
+-- customers_claims
+INSERT INTO customers_claims (firstname, secondname, firstlastname, secondlastname) VALUES
+('DANIEL','ALONSO','VALERIO','BRONCANO');
+
 -- MALL
 INSERT INTO
     mall (name)

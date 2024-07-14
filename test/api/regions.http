@@ -1,9 +1,6 @@
 # Environtment
 @BASE_URL=http://localhost:3000
-@ROUTES=/api/v1/districts
-@ID=5
+@ROUTES=/api/v1/regions
+@ID=
 ### Listar registros
 GET {{BASE_URL}}{{ROUTES}} HTTP/1.1
-
-### Listar registros por ID
-GET {{BASE_URL}}{{ROUTES}}/{{ID}} HTTP/1.1

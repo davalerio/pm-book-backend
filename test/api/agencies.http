@@ -1,8 +1,9 @@
 # Environtment
-@BASE_URL=http://localhost:
-@PORT=3000
+@BASE_URL=http://localhost:3000
 @ROUTES=/api/v1/agencies
-
+@ID=508765f3-4198-11ef-a402-723401d86a22
 ### Listar registros
-GET {{BASE_URL}}{{PORT}}{{ROUTES}} HTTP/1.1
-Content-Type: application/json
+GET {{BASE_URL}}{{ROUTES}} HTTP/1.1
+
+### Listar registros por ID
+GET {{BASE_URL}}{{ROUTES}}/{{ID}} HTTP/1.1
