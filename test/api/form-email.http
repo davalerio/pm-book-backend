@@ -1,0 +1,18 @@
+# Environtment
+@BASE_URL=http://localhost:3000
+@ROUTES=/api/v1/form-email
+
+### Registrar formulario
+POST {{BASE_URL}}{{ROUTES}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "personId": "1e5700a5-4191-11ef-a402-723401d86a22",
+  "documentId": "ebadefdd-4190-11ef-a402-723401d86a22",
+  "documentNum": "46789226",
+  "firstname": "Daniel",
+  "secondname": "Alonso",
+  "firstlastname": "Valerio",
+  "secondlastname": "Broncano"
+}
+

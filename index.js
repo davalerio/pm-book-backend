@@ -10,6 +10,7 @@ import ClaimsTypeRoute from './routes/claims-type.route.js'
 import CustomerClaimRoute from './routes/customers-claims.route.js'
 import CustomerAttributeRoute from './routes/customers-attributes.route.js'
 import DetailClaimRoute from './routes/details-claims.route.js'
+import FormEmailRoute from './routes/form-email.route.js'
 
 import requestHistoryRouter from './routes/requestsHistory.js'
 // Ubigeo
@@ -34,6 +35,7 @@ app.use('/api/v1/claims-type', ClaimsTypeRoute)
 app.use('/api/v1/customers-claims', CustomerClaimRoute)
 app.use('/api/v1/customers-attributes', CustomerAttributeRoute)
 app.use('/api/v1/details-claims', DetailClaimRoute)
+app.use('/api/v1/form-email', FormEmailRoute)
 
 app.use('/api/v1/requests-history', requestHistoryRouter)
 // Routes ubigeo
