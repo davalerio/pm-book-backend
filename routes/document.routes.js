@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const mysqlConnection = require('../config/db');
+const mysqlConnection = require('../config/db.js');
 
 //List document
 router.get('/document', (req, res) => {

@@ -1,18 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const bodyparser = require('body-parser');
 const colors = require('colors');
-
-app.use(cors());
 
 //CONFIGURATION
 app.set('port', process.env.PORT || 3000);
 
 //MIDDLEWARE
-// app.use(express.json());
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({ extended: false }));
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extends: true }));
 
 //ROUTES
 app.use(require('./routes/email.routes'));

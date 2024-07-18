@@ -72,7 +72,7 @@ const sendEmail = (req, res) => {
         requireTLS: true,
         auth: {
           user: 'reclamos@perumoney.pe',
-          pass: 'Perumoney@2023',
+          pass: 'P3rumoney#2024',
         },
         tls: {
           rejectUnauthorized: false,
@@ -88,46 +88,46 @@ const sendEmail = (req, res) => {
 				<!DOCTYPE html
 				PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<html xmlns="http://www.w3.org/1999/xhtml">
-			
+
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>LR Virtual</title>
 			</head>
-			
+
 			<body style="margin: 0; background-color: #cccccc; font-family: sans-serif;">
 				<center class="wrapper" style="width: 100%; table-layout: fixed; background-color: #cccccc; padding-bottom: 60px;">
 					<table class="main" width="100%" style="border-collapse: collapse; table-layout: fixed; background-color: #ffffff; margin: 0 auto; width: 100%; max-width: 600px; border-spacing: 0; font-family: sans-serif; color: #171a1b;" bgcolor="#ffffff">
 						<tr>
 							<td height="4" style="letter-spacing: -0.5px; background-color: #ea0c73;" bgcolor="#ea0c73"></td>
 						</tr>
-			
+
 						<tr>
 							<td style="letter-spacing: -0.5px; background: #000; text-align: center;" align="center">
 								<img src="https://app.perumoney.pe/assets/media/logos/pm-logo.png" style="width: 200px">
 											</td>
 						</tr>
-			
+
 						<tr>
 							<td class="title" style="text-align: center; font-size: 30px; font-weight: 600; letter-spacing: -1.5px; padding-top: 20px; padding-bottom: 20px;" align="center">
 								Libro de reclamaciones digital
 							</td>
 						</tr>
-			
+
 						<tr>
 							<td class="info" style="letter-spacing: -0.5px; font-size: 14px; padding-left: 20px; padding-right: 20px; padding-top: 6px; padding-bottom: 6px;">
 								Hola <span style="font-weight: bold;">${first_name} ${father_surname};</span>
 							</td>
 						</tr>
-			
+
 						<tr>
 							<td class="info" style="letter-spacing: -0.5px; font-size: 14px; padding-left: 20px; padding-right: 20px; padding-top: 6px; padding-bottom: 6px;">
 								Hemos recibido su <span style="font-weight: bold;">${request_id} ${serie} - ${correlative}</span> y queremos asegurarle que
 								estamos trabajando en ello.
 							</td>
 						</tr>
-			
+
 						<tr>
 							<td class="info" style="letter-spacing: -0.5px; font-size: 14px; padding-left: 20px; padding-right: 20px; padding-top: 6px; padding-bottom: 6px;">
 								Le recordamos que nuestro compromiso es responder su solicitud dentro de un plazo máximo de 15
@@ -135,7 +135,7 @@ const sendEmail = (req, res) => {
 								agradecemos su paciencia y comprensión.
 							</td>
 						</tr>
-			
+
 						<!-- FORMULARIO -->
 						<tr>
 							<td style="letter-spacing: -0.5px; padding-left: 20px; padding-right: 20px;">
@@ -186,7 +186,7 @@ const sendEmail = (req, res) => {
 									<tr>
 										<td class="form-label" style="letter-spacing: -0.5px; font-size: 12px; font-weight: 600;">Departamento</td>
 										<td class="form-label" style="letter-spacing: -0.5px; font-size: 12px; font-weight: 600;">Provincia</td>
-										<td class="form-label" style="letter-spacing: -0.5px; font-size: 12px; font-weight: 600;">Distrito</td>	
+										<td class="form-label" style="letter-spacing: -0.5px; font-size: 12px; font-weight: 600;">Distrito</td>
 									</tr>
 									<tr>
 										<td style="letter-spacing: -0.5px;">${department_id}</td>

@@ -1,0 +1,25 @@
+POST http://localhost:3000/emailQullqui HTTP/1.1
+Content-Type: application/json
+
+{
+  "ruc": "00000000000",
+  "business": "PERUMONEY",
+  "document_id": "DNI",
+  "document_num": "46789226",
+  "first_name": "DANIEL",
+  "father_surname": "VALERIO",
+  "mother_surname": "BRONCANO",
+  "email": "danielvaleriob@gmail.com",
+  "phone": "999999999",
+  "address": "CA. LAS FRESAS 123",
+  "department_id": "CALLAO",
+  "province_id": "CALLAO",
+  "district_id": "CALLAO",
+  "service_id": "WESTERN UNION",
+  "amount": "999.99",
+  "request_id": "RECLAMO",
+  "day": "2024-07-17",
+  "hour": "11:00:00",
+  "agency_id": "MINKA",
+  "message": "MENSAJE DE PRUEBA DESDE REST_CLIENT"
+}
