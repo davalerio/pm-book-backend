@@ -4,7 +4,7 @@ const app = express();
 const colors = require('colors');
 
 //CONFIGURATION
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 
 //MIDDLEWARE
 app.use(cors());
